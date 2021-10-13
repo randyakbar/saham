@@ -14,47 +14,10 @@ function Portofolio() {
           </div>
           <div className="divider-custom-line"></div>
         </div>
+
         <div className="row justify-content-center">
-          <div className="col-md-6 col-lg-4 mb-5">
-            <div
-              className="portfolio-item mx-auto"
-              data-bs-toggle="modal"
-              data-bs-target="#portfolioModal1"
-            >
-              <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                <div className="portfolio-item-caption-content text-center text-white">
-                  <i className="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <Image
-                className="img-fluid"
-                src="/img/portfolio/cabin.png"
-                alt="..."
-                width="100%"
-                height="100%"
-              />
-            </div>
-          </div>
-          <div className="col-md-6 col-lg-4 mb-5">
-            <div
-              className="portfolio-item mx-auto"
-              data-bs-toggle="modal"
-              data-bs-target="#portfolioModal2"
-            >
-              <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                <div className="portfolio-item-caption-content text-center text-white">
-                  <i className="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <Image
-                className="img-fluid"
-                src="/img/portfolio/cake.png"
-                alt="..."
-                width="100%"
-                height="100%"
-              />
-            </div>
-          </div>
+         
+          
           <div className="col-md-6 col-lg-4 mb-5">
             <div
               className="portfolio-item mx-auto"
@@ -66,9 +29,9 @@ function Portofolio() {
                   <i className="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img
+              <Image
                 className="img-fluid"
-                src="img/portfolio/circus.png"
+                src="/img/portfolio/circus.png"
                 alt="..."
               />
             </div>
@@ -84,9 +47,9 @@ function Portofolio() {
                   <i className="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img
+              <Image
                 className="img-fluid"
-                src="img/portfolio/game.png"
+                src="/img/portfolio/game.png"
                 alt="..."
               />
             </div>
@@ -102,31 +65,14 @@ function Portofolio() {
                   <i className="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img
+              <Image
                 className="img-fluid"
-                src="img/portfolio/safe.png"
+                src="/img/portfolio/safe.png"
                 alt="..."
               />
             </div>
           </div>
-          <div className="col-md-6 col-lg-4">
-            <div
-              className="portfolio-item mx-auto"
-              data-bs-toggle="modal"
-              data-bs-target="#portfolioModal6"
-            >
-              <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                <div className="portfolio-item-caption-content text-center text-white">
-                  <i className="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img
-                className="img-fluid"
-                src="img/portfolio/submarine.png"
-                alt="..."
-              />
-            </div>
-          </div>
+         
         </div>
       </div>
     </section>
