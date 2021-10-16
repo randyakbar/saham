@@ -16,11 +16,11 @@ function DaftarKeahlian() {
         <Sections>
             <div className="flex flex-column ">
                 <div className="flex-1 flex items-center justify-center">
-                    <Image src="/img/squid.png" width="100" height="200" />
+                    <Image src="/img/squid.png" width="100" height="200" alt="question" />
                 </div>
                 <ul className="flex-1 text-left list-disc" >
-                    { DaftarGakPerlu.map(e => (
-                        <li className="align-top my-3"> 
+                    { DaftarGakPerlu.map((e,i) => (
+                        <li className="align-top my-3" key={`$daftar-{i}`}> 
                             <span className="text-xl text-gray-900 font-light">{e}</span>
                         </li>
                     ))}

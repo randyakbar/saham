@@ -44,7 +44,7 @@ function HomePage() {
         <p className="text-3xl text-red-500 font-extrabold">SAHAM SYARIAH 2021</p>
 
         <Gap height={50} />
-        <Image src='/img/header.jpg' layout="responsive" width={100} height={30} />
+        <Image src='/img/header.jpg' layout="responsive" width={100} height={30} alt="header" />
 
         <Gap height={50} />
 
