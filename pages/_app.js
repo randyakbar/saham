@@ -1,13 +1,12 @@
-import "../styles/globals.css";
+import '../styles/globals.css'
 import Head from "next/head";
-import Script from "next/script";
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
         <title>Saham Syariah Bisa</title>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -15,25 +14,12 @@ function MyApp({ Component, pageProps }) {
         <meta name="description" content="Randy Kurnia Akbar" />
         <meta name="author" content="Randy" />
 
-        {/* CSS */}
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-        ></link>
-        <link
-          href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
-          rel="stylesheet"
-          type="text/css"
-        />
-        <link
-          href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
-          rel="stylesheet"
-          type="text/css"
-        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+      
       </Head>
       <Component {...pageProps} />
-      <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" />
-      <Script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" />
     </>
   );
 }
