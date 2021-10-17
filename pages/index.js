@@ -9,10 +9,36 @@ import { isiLinkWA } from "../consts/config";
 
 function HomePage() {
   return (
-    <div>
-      <Hero />
+    <div className="mt-5">
       <Sections>
-        <Gap height={40} />
+        <div className="bg-yellow-300 font-semibold p-3 rounded-md  shadow-inner drop-shadow-md">
+          <h1
+            className="text-base text-red-700 subpixel-antialiased"
+            style={{
+              textShadowOffset: { width: 5, height: 5 },
+              textShadowRadius: 10,
+              textShadowColor: "blue",
+            }}
+          >
+            BELAJAR SAHAM SYARIAH 2021
+          </h1>
+        </div>
+      </Sections>
+
+      <Sections isFullscreen={true}>
+        {HeaderImage && (
+          <Image src={HeaderImage} layout="responsive" alt="header" />
+        )}
+      </Sections>
+
+      <Sections>
+        <Gap height={30} />
+        <div className="justify-center flex">
+          <Buttons title="Daftar Webminar Gratis" href={isiLinkWA} />
+        </div>
+        <Gap height={30} />
+        <DaftarKeahlian />
+
         <p className="text-xl font-semibold leading-snug md:text-4xl">
           SUDAH MENCOBA BERBAGAI USAHA DAN PEKERJAAN TAPI KEUANGAN KAMU
           GITU-GITU AJA.? ITU ARTINYA SAAT INI KAMU HARUS MEMBUKA MINDSET MU
@@ -20,9 +46,6 @@ function HomePage() {
           ORANG TAU !!!
         </p>
         <Gap height={40} />
-        <div className="justify-center flex">
-          <Buttons title="Daftar Sekarang" href={isiLinkWA} />
-        </div>
       </Sections>
 
       <Sections>
@@ -71,18 +94,6 @@ function HomePage() {
         </p>
       </Sections>
 
-      <Sections isFullscreen={true}>
-        {HeaderImage && (
-          <Image
-            src={HeaderImage}
-            layout="responsive"
-            alt="header"
-          />
-        )}
-      </Sections>
-
-      <DaftarKeahlian />
-
       <Sections>
         <p className="mx-auto w-10/12 text-base md:text-2xl font-light leading-normal">
           Akan di <span className="font-bold">bimbing Dari NOL</span>, anda
@@ -91,9 +102,6 @@ function HomePage() {
         </p>
 
         <Gap height={50} />
-        <div className="justify-center flex">
-          <Buttons title="Daftar Sekarang" href={isiLinkWA} />
-        </div>
       </Sections>
 
       <Gap height={50} />

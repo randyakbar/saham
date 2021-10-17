@@ -1,11 +1,12 @@
 import '../styles/globals.css'
 import Head from "next/head";
+import { title } from "../consts/config"
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Saham Syariah Bisa</title>
+        <title>{title}</title>
         <meta charSet="utf-8" />
         <meta
           name="viewport"
