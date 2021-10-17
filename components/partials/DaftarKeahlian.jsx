@@ -1,6 +1,8 @@
 import React from 'react'
 import Sections from '../Sections'
 import Image from 'next/image'
+import AboutImage from "../../public/img/squid.png"
+import ArrowIcon from "../../public/icon/arrow-right-circle.svg"
 
 const DaftarGakPerlu = [
     'Gak perlu cari pelanggan',
@@ -11,20 +13,27 @@ const DaftarGakPerlu = [
     'Sudah ada sertifikasi halal dari mui (Majelis Ulama Indonesia)',
 ]
 
+
 function DaftarKeahlian() {
     return (
         <Sections>
-            <div className="flex flex-column ">
-                <div className="flex-1 flex items-center justify-center">
-                    <Image src="/img/squid.png" width="100" height="200" alt="question" />
+            <div className="flex flex-row ">
+                <div className="hidden w-full items-center justify-center md:flex md:flex-1">
+                    {AboutImage && (
+                        <Image src={AboutImage} width="100" height="200" alt="question" />
+                    )}
                 </div>
-                <ul className="flex-1 text-left list-disc" >
-                    { DaftarGakPerlu.map((e,i) => (
-                        <li className="align-top my-3" key={`$daftar-{i}`}> 
-                            <span className="text-xl text-gray-900 font-light">{e}</span>
-                        </li>
-                    ))}
-                </ul>
+                {ArrowIcon && (
+                    <ul className="p-5 m-0 md:list-none text-center md:text-left md:flex-1" >
+                        {DaftarGakPerlu.map((e, i) => (
+                            <li className="align-top md:my-3" key={`$daftar-{i}`}>
+                                <Image src={ArrowIcon} width={10} height={10} alt="arrow icon" className="md:hidden" />
+                                <span className="ml-2 text-base text-gray-900 font-light md:text-xl">{e}</span>
+                            </li>
+                        ))}
+                    </ul>
+                )}
+
             </div>
         </Sections>
 
