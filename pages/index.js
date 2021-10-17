@@ -36,7 +36,7 @@ function HomePage() {
         <div className="justify-center flex">
           <Buttons title="Daftar Webminar Gratis" href={isiLinkWA} />
         </div>
-        <Gap height={30} />
+        <Gap height={20} />
         <DaftarKeahlian />
 
         <p className="text-xl font-semibold leading-snug md:text-4xl">

@@ -16,8 +16,7 @@ const DaftarGakPerlu = [
 
 function DaftarKeahlian() {
     return (
-        <Sections isFullscreen={true}>
-            <h1 className="text-sm hidden text-red-800 font-bold">KELAS INI COCOK UNTUK ANDA YANG: </h1>
+        <Sections isFullScreen={true}>
             <div className="flex flex-row ">
                 <div className="hidden w-full items-center justify-center md:flex md:flex-1">
                     {AboutImage && (
@@ -25,13 +24,14 @@ function DaftarKeahlian() {
                     )}
                 </div>
                 {ArrowIcon && (
-                    <ol className="p-5 m-0 list-decimal text-left md:text-left md:flex-1" >
+                    <ul className="py-5 m-0 text-center md:text-left md:flex-1" >
                         {DaftarGakPerlu.map((e, i) => (
-                            <li className="align-top my-2 md:my-3" key={`$daftar-{i}`}>
-                                <span className="ml-1 text-base text-gray-900 font-normal leading-normal md:text-xl">{e}</span>
+                            <li className="align-top md:my-3" key={`$daftar-{i}`}>
+                                <Image src={ArrowIcon} width={10} height={10} alt="arrow icon" className="md:hidden" />
+                                <span className="ml-2 text-base text-gray-900 font-normal md:text-xl">{e}</span>
                             </li>
                         ))}
-                    </ol>
+                    </ul>
                 )}
 
             </div>
