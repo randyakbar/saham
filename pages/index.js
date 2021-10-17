@@ -40,7 +40,7 @@ function HomePage() {
       <Sections isFullscreen={true}>
         <div className="flex justify-center w-full items-center">
           <iframe
-            className="w-9/12 h-96"
+            className="w-10/12 h-auto md:96 md:w-9/12"
             src="https://www.youtube.com/embed/FCJCwAsPhPM"
             title="YouTube video player"
             frameBorder="0"
